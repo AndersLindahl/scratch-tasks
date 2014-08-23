@@ -1,35 +1,50 @@
-﻿<html>
+<!DOCTYPE html>
+<html>
 <head>
- <STYLE type="text/css">
-	.firstpage {
-		text-align: center;
+	<meta charset="UTF-8">
+	<title>Scratch-idéer</title>
+	<STYLE type="text/css">
+		.firstpage {
+			text-align: center;
+			}
+		img {
+			clear:both;
+			float:none;
+			margin: 2px;
+			}
+			
+		.task 
+		{
+			float:none;
+			clear:both;
 		}
-	img {
-		clear:both;
-		float:none;
-		margin: 2px;
-		}
-		
-	.task 
-	{
-		float:none;
-		clear:both;
-	}
- </STYLE>
 
- <STYLE type="text/css" media="print">
-	.task, .firstpage
-	{
-		page-break-after: always;
-	}
-	
-	.firstpage 
-	{
-		margin:20em 1em 1em 1em;
+	</STYLE>
+
+	<STYLE type="text/css" media="print">
+		body
+		{
+			counter-reset: page;
+		}
 		
-	}
- </STYLE>
+		.task, .firstpage
+		{
+			page-break-after: always;
+		}
+		
+		.firstpage 
+		{
+			margin:20em 1em 1em 1em;
+			
+		}
+		
+		@page {
+			counter-increment: pagecounter;
+			
+		}
+	</STYLE>
 </head>
+
 <body>
 <div class="firstpage">
 <h1>Scratch-idéer</h1>
@@ -41,7 +56,7 @@
 
 <div class="task"><h1>Hitta i Scratch</h1>
 <p>Så här ser Scratch-fönstret ut:</p>
-<img src="images/scratch_window.png"/>
+<img src="images/scratch_window.png" alt="Scratch-fönstret"/>
 <p>I övre vänstra hörnet finns "scenen", där du kommer se resultatet av dina spel. Om du klickar på den blåa fyrkanten i övre vänstra hörnet så fyller scenen hela skärmen.</p>
 
 <p>I mitten ser du en massa blåa pusselbitar som du kan använda för att göra ditt spel.</p>
@@ -53,35 +68,35 @@
 
 <div class="task"><h1>Pussla ihop block</h1>
 <p>Scrach-blocken fungerar som pusselbitar. De flesta av dem pusslar man ihop efter varandra:</p>
-<img src="images/snap_blocks.png"/>
+<img src="images/snap_blocks.png" alt="Pussla ihop block"/>
 
 <p>En del kontroll-block kan sitta runt block:</p>
-<img src="images/control_block.png"/>
+<img src="images/control_block.png" alt="Kontroll-block"/>
 
 <p>Formen på blocken visar hur de kan pusslas ihop. I runda hål kan man pussla in block med rundade hörn:</p>
-<img src="images/random_block.png"/>
+<img src="images/random_block.png" alt="Slumptalsblock"/>
 
 <p>...och i kantiga hål block med kantiga hörn:</p>
-<img src="images/boolean_block.png"/>
+<img src="images/boolean_block.png" alt="Boolskt uttryck"/>
 
 </div>
 
 <div class="task"><h1>Röra på sig</h1>
 <p>Det här programmet får katten att röra på sig när du trycker på den gröna flaggan:</p>
-<img src="images/circle_movement.png"/>
+<img src="images/circle_movement.png" alt="Loop"/>
 
 <p>Hur kommer katten röra sig?</p>
 <p>Kan du få katten att röra sig i andra mönster? En fyrkant, en triangel, en åtta?</p>
 
 <p><em>Alla blåa block som sitter ihop utförs på en gång i Scratch, det syns alltså ingen skillnad på de här
 två blocken när katten rör sig trots att de ser olika ut:</em></p>
-<img src="images/block_grouping.png"/>
+<img src="images/block_grouping.png" alt="Gruppering av blåa block"/>
 
 </div>
 
 <div class="task"><h1>Klicka på katten</h1>
 <p>Här är ett spel där man ska klicka på katten som rör sig. Varje gång man träffar jamar katten:</p>
-<img src="images/click_cat.png"/>
+<img src="images/click_cat.png" alt="Klicka på katten"/>
 
 <p>Här är några idéer på hur man kan ändra programmet:</p>
 <ul>
@@ -96,7 +111,7 @@ två blocken när katten rör sig trots att de ser olika ut:</em></p>
 
 <div class="task"><h1>Spela toner</h1>
 <p>Med Scratch-blocken under rubriken ”Ljud” kan man lätt göra ett program för att spela musik. Det här programmet kopplar knappar på tangentbordet till olika toner.</p>
-<img src="images/play_notes.png"/>
+<img src="images/play_notes.png" alt="Tonprogram"/>
 
 <p>Här är några idéer på hur man kan göra med programmet:</p>
 
@@ -113,14 +128,14 @@ två blocken när katten rör sig trots att de ser olika ut:</em></p>
 <p>Om din dator har en kamera så kan du leka med den i Scratch. Scratch kan känna av rörelse framför kameran.
 Programmet nedan slår på kameran och katten jamar om det rör sig tillräckligt mycket:</p>
 
-<img src="images/video_motion.png" />
+<img src="images/video_motion.png" alt="Program som känner av video."/>
 
 <p><em>Om det är svårt att få katten att reagera, prova att ändra värdet 90 ovan till något lägre, tex. 50. Video-rörelse har värden från noll till hundra, där noll motsvarar orörlig och hundra mycket rörelse.</em></p>
 
 <p>Här är några idéer på hur man kan ändra programmet:</p>
 
 <ul>
-<li>Kan du få katten att röra sig när du viftar framför kameran?</li>
+<li>Få katten att röra sig när du viftar framför kameran.</li>
 <li>Få katten att röra sig av sig själv, ge poäng när du lyckas vifta under den.</li>
 <li>Lägg till ytterligare en sprite som rör sig av sig själv, och låt den ge minuspoäng om den känner rörelser.</li>
 </ul>
@@ -132,12 +147,12 @@ Programmet nedan slår på kameran och katten jamar om det rör sig tillräcklig
 
 <div class="task"><h1>Ett rymdspel</h1>
 <p>Såhär kan man göra ett spel där saker flyger mot spelaren. I mitt exempel har jag valt en rymdraket som spelare, men du kan välja vilken du vill.</p>
-<img src="images/space_screenshot.png" width="333" height="251"/>
+<img src="images/space_screenshot.png" width="333" height="251" alt="Ett rymdspel"/>
 <p>Först spelarens program:</p>
-<img src="images/space_ship.png"/>
+<img src="images/space_ship.png" alt="Rymdskeppets program"/>
 <p>Välj sedan en ny sprite för det som ska flyga mot spelaren – t.ex. tennisbollar. Här används ”kloner” för att skapa flera kopior av samma sprite.</p>
 
-<img src="images/space_balls.png"/>
+<img src="images/space_balls.png" alt="Tennisbollarnas program"/>
 <p>Programmet till vänster ser till att det dyker upp en ny klon var femte sekund. Programmet till höger styr vad den klonen ska göra.</p>
 
 <ul>
@@ -151,10 +166,10 @@ Programmet nedan slår på kameran och katten jamar om det rör sig tillräcklig
 <p>Detta är en enkel början till ett spel där en katt knuffar på en fotboll.</p>
 
 <p>Vi börjar med katten. Den behöver bara kunna styras på något sätt:</p>
-<img src="images/push_control.png"/>
+<img src="images/push_control.png" alt="Knuffa på saker (knuffare)"/>
 
 <p>Fotbollen som ska flytta sig när den blir knuffad behöver kunna lite mer:</p>
-<img src="images/push_react.png"/>
+<img src="images/push_react.png" alt="Knuffa på saker (boll)"/>
 
 <p>Här är några idéer på hur man kan ändra programmet:</p>
 <ul>
@@ -167,9 +182,9 @@ Programmet nedan slår på kameran och katten jamar om det rör sig tillräcklig
 <div class="task"><h1>Game over!</h1>
 <p>Ibland vill man inte att spelet ska starta direkt när man klickar på den gröna flaggan, och ibland vill man avsluta spelet med en snygg "Game Over!"-bild.</p>
 
-<p>Det finns flera olika sätt att göra detta. Ett är att låta bakgrundsbilden styra. Så här kan det se ut:</p>
+<p>Det finns flera olika sätt att göra detta. Ett är att låta bakgrundsbilden styra. Så här kan det se ut:</p>
 
-<img src="images/when_backdrop_changes.png"/>
+<img src="images/when_backdrop_changes.png" alt="Bakgrunden styr flödet"/>
 
 <p>Innan du provar detta behöver du skapa tre bakgrundsbilder. Du kan hämta dem ur Scratch inbyggda bibliotek, eller rita egna.</p>
 <p>När du klickar på den gröna flaggan kommer den första bakgrundsbilden visas i 10 sekunder. Sedan växlar spelet till nästa bild, och den växlingen får katten att börja röra på sig.</p>
@@ -180,9 +195,9 @@ Programmet nedan slår på kameran och katten jamar om det rör sig tillräcklig
 <div class="task"><h1>Rita blommor</h1>
 <p>Här är ett ganska långt program där katten använder pennan i Scratch för att rita en blomma:</p>
 
-<img src="images/draw_flower.png"/>
+<img src="images/draw_flower.png" alt="Rita blommor"/>
 <p>Såhär kan det se ut när man kört programmet några gånger:</p>
-<img src="images/draw_flower_screenshot.png"/>
+<img src="images/draw_flower_screenshot.png" alt="Några ritade blommor"/>
 
 <ul>
 <li>Kan du rita blommor i andra färger?
@@ -196,8 +211,8 @@ Programmet nedan slår på kameran och katten jamar om det rör sig tillräcklig
 <div class="task"><h1>Pennans färg</h1>
 <p>Pennans färg i Scratch styrs med två värden:</p>
 
-<img src="images/pen_set_color_int.png"/>
-<img src="images/pen_set_shade.png"/>
+<img src="images/pen_set_color_int.png" alt="Pennans färg"/>
+<img src="images/pen_set_shade.png" alt="Pennans nyans"/>
 
 <p><strong>"Pennans färg"</strong> är ett värden mellan 0 och 200.</p>
 
@@ -224,150 +239,150 @@ Programmet nedan slår på kameran och katten jamar om det rör sig tillräcklig
 
 <div class="task"><h1>Punkter och riktningar</h1>
 <p>Kartor för att komma ihåg var olika punkter finns och vad olika riktningar betyder:</p>
-<img src="images/angles.png"/>
-<img src="images/grid.png"/>
+<img src="images/angles.png" alt="Vinklar"/>
+<img src="images/grid.png" alt="Punkter"/>
 </div>
 
 
 <div class="task"><h1>Blocken i Scratch</h1>
 
-<img src="images/motion_move_n_steps.png"/>
-<img src="images/motion_turn_cw_n_degrees.png"/>
-<img src="images/motion_turn_ccw_n_degrees.png"/>
-<img src="images/motion_point_in_direction_n.png"/>
-<img src="images/motion_point_towards.png"/>
-<img src="images/motion_goto_xy.png"/>
-<img src="images/motion_goto.png"/>
-<img src="images/motion_glide.png"/>
-<img src="images/motion_change_x_by.png"/>
-<img src="images/motion_set_x_to.png"/>
-<img src="images/motion_change_y_by.png"/>
-<img src="images/motion_set_y_to.png"/>
-<img src="images/motion_bounce.png"/>
-<img src="images/motion_set_rotation_style.png"/>
-<img src="images/motion_x_position.png"/>
-<img src="images/motion_y_position.png"/>
-<img src="images/motion_direction.png"/>
+<img src="images/motion_move_n_steps.png" alt="Gå n steg"/>
+<img src="images/motion_turn_cw_n_degrees.png" alt="Vrid medsols"/>
+<img src="images/motion_turn_ccw_n_degrees.png" alt="Vrid motsols"/>
+<img src="images/motion_point_in_direction_n.png" alt="Sätt riktning till"/>
+<img src="images/motion_point_towards.png" alt="Riktning mot"/>
+<img src="images/motion_goto_xy.png" alt="Gå till x,y"/>
+<img src="images/motion_goto.png" alt="Gå till"/>
+<img src="images/motion_glide.png" alt="Glid"/>
+<img src="images/motion_change_x_by.png" alt="Ändra x med"/>
+<img src="images/motion_set_x_to.png" alt="Sätt x till"/>
+<img src="images/motion_change_y_by.png" alt="Ändra y med"/>
+<img src="images/motion_set_y_to.png" alt="Sätt y till"/>
+<img src="images/motion_bounce.png" alt="Studsa vid kanten"/>
+<img src="images/motion_set_rotation_style.png" alt="Rotationsstil"/>
+<img src="images/motion_x_position.png" alt="x-position"/>
+<img src="images/motion_y_position.png" alt="y-position"/>
+<img src="images/motion_direction.png" alt="Riktning"/>
 
-<img src="images/looks_say_seconds.png"/>
-<img src="images/looks_say.png"/>
-<img src="images/looks_think_seconds.png"/>
-<img src="images/looks_think.png"/>
-<img src="images/looks_show.png"/>
-<img src="images/looks_hide.png"/>
-<img src="images/looks_change_costume.png"/>
-<img src="images/looks_next_costume.png"/>
-<img src="images/looks_change_backdrop.png"/>
-<img src="images/looks_change_effect.png"/>
-<img src="images/looks_set_effect.png"/>
-<img src="images/looks_remove_effect.png"/>
-<img src="images/looks_change_size.png"/>
-<img src="images/looks_set_size.png"/>
-<img src="images/looks_put_on_top.png"/>
-<img src="images/looks_change_layer.png"/>
-<img src="images/looks_costume.png"/>
-<img src="images/looks_backdrop_name.png"/>
-<img src="images/looks_size.png"/>
+<img src="images/looks_say_seconds.png" alt="Säg i sekunder"/>
+<img src="images/looks_say.png" alt="Säg"/>
+<img src="images/looks_think_seconds.png" alt="Tänk i sekunder"/>
+<img src="images/looks_think.png" alt="Tänk"/>
+<img src="images/looks_show.png" alt="Visa"/>
+<img src="images/looks_hide.png" alt="Göm"/>
+<img src="images/looks_change_costume.png" alt="Ändra utseende"/>
+<img src="images/looks_next_costume.png" alt="Nästa utseende"/>
+<img src="images/looks_change_backdrop.png" alt="Ändra bakgrund"/>
+<img src="images/looks_change_effect.png" alt="Ändra effekt"/>
+<img src="images/looks_set_effect.png" alt="Sätt effekt"/>
+<img src="images/looks_remove_effect.png" alt="Ta bort grafisk effekt"/>
+<img src="images/looks_change_size.png" alt="Ändra storlek"/>
+<img src="images/looks_set_size.png" alt="Sätt storlek"/>
+<img src="images/looks_put_on_top.png" alt="Lägg överst"/>
+<img src="images/looks_change_layer.png" alt="Ändra lager"/>
+<img src="images/looks_costume.png" alt="Utseende"/>
+<img src="images/looks_backdrop_name.png" alt="Bakgrund"/>
+<img src="images/looks_size.png" alt="Storlek"/>
 
-<img src="images/sound_play.png"/>
-<img src="images/sound_play_finished.png"/>
-<img src="images/sound_stop.png"/>
-<img src="images/sound_play_drum.png"/>
-<img src="images/sound_pause.png"/>
-<img src="images/sound_play_note.png"/>
-<img src="images/sound_set_instrument.png"/>
-<img src="images/sound_change_volume.png"/>
-<img src="images/sound_set_volume.png"/>
-<img src="images/sound_volume.png"/>
-<img src="images/sound_change_tempo.png"/>
-<img src="images/sound_set_tempo.png"/>
-<img src="images/sound_tempo.png"/>
+<img src="images/sound_play.png" alt="Spela"/>
+<img src="images/sound_play_finished.png" alt="Spela tills färdig"/>
+<img src="images/sound_stop.png" alt="Stoppa ljud"/>
+<img src="images/sound_play_drum.png" alt="Spela trumma"/>
+<img src="images/sound_pause.png" alt="Paus"/>
+<img src="images/sound_play_note.png" alt="Spela ton"/>
+<img src="images/sound_set_instrument.png" alt="Sätt instrument"/>
+<img src="images/sound_change_volume.png" alt="Ändra volym"/>
+<img src="images/sound_set_volume.png" alt="Sätt volym"/>
+<img src="images/sound_volume.png" alt="Volym"/>
+<img src="images/sound_change_tempo.png" alt="Ändra tempo"/>
+<img src="images/sound_set_tempo.png" alt="Sätt tempo"/>
+<img src="images/sound_tempo.png" alt="Tempo"/>
 
-<img src="images/pen_delete.png"/>
-<img src="images/pen_stamp.png"/>
-<img src="images/pen_down.png"/>
-<img src="images/pen_up.png"/>
-<img src="images/pen_set_color_color.png"/>
-<img src="images/pen_change_color.png"/>
-<img src="images/pen_set_color_int.png"/>
-<img src="images/pen_change_shade.png"/>
-<img src="images/pen_set_shade.png"/>
-<img src="images/pen_change_size.png"/>
-<img src="images/pen_set_size.png"/>
+<img src="images/pen_delete.png" alt="Radera"/>
+<img src="images/pen_stamp.png" alt="Stämpla"/>
+<img src="images/pen_down.png" alt="Penna ner"/>
+<img src="images/pen_up.png" alt="Penna upp"/>
+<img src="images/pen_set_color_color.png" alt="Sätt pennfärg"/>
+<img src="images/pen_change_color.png" alt="Ändra pennfärg"/>
+<img src="images/pen_set_color_int.png" alt="Sätt pennfärg"/>
+<img src="images/pen_change_shade.png" alt="Ändra färgton"/>
+<img src="images/pen_set_shade.png" alt="Sätt färgton"/>
+<img src="images/pen_change_size.png" alt="Ändra pennstorlek"/>
+<img src="images/pen_set_size.png" alt="Sätt pennstorlek"/>
 
-<img src="images/data_set_variable.png"/>
-<img src="images/data_change_variable.png"/>
-<img src="images/data_show_variable.png"/>
-<img src="images/data_hide_variable.png"/>
-<img src="images/data_list_append.png"/>
-<img src="images/data_list_remove.png"/>
-<img src="images/data_list_insert.png"/>
-<img src="images/data_list_replace.png"/>
-<img src="images/data_list_element.png"/>
-<img src="images/data_list_length.png"/>
-<img src="images/data_list_contains.png"/>
-<img src="images/data_show_list.png"/>
-<img src="images/data_hide_list.png"/>
+<img src="images/data_set_variable.png" alt="Sätt variabel"/>
+<img src="images/data_change_variable.png" alt="Ändra variabel"/>
+<img src="images/data_show_variable.png" alt="Visa variabel"/>
+<img src="images/data_hide_variable.png" alt="Göm variabel"/>
+<img src="images/data_list_append.png" alt="Lägg till i lista"/>
+<img src="images/data_list_remove.png" alt="Ta bort från lista"/>
+<img src="images/data_list_insert.png" alt="Sätt in i lista"/>
+<img src="images/data_list_replace.png" alt="Byt ut i lista"/>
+<img src="images/data_list_element.png" alt="Element n i lista"/>
+<img src="images/data_list_length.png" alt="Listlängd"/>
+<img src="images/data_list_contains.png" alt="Listan innehåller"/>
+<img src="images/data_show_list.png" alt="Visa lista"/>
+<img src="images/data_hide_list.png" alt="Göm lista"/>
 
-<img src="images/events_green_flag.png"/>
-<img src="images/events_keypress.png"/>
-<img src="images/events_click.png"/>
-<img src="images/events_backdrop.png"/>
-<img src="images/events_value.png"/>
-<img src="images/events_message.png"/>
-<img src="images/events_send_message.png"/>
-<img src="images/events_send_message_and_wait.png"/>
+<img src="images/events_green_flag.png" alt="Gröna flaggan"/>
+<img src="images/events_keypress.png" alt="Knapptryckning"/>
+<img src="images/events_click.png" alt="Klick"/>
+<img src="images/events_backdrop.png" alt="Bakgrund ändras"/>
+<img src="images/events_value.png" alt="Värde"/>
+<img src="images/events_message.png" alt="Meddelande"/>
+<img src="images/events_send_message.png" alt="Skicka meddelande"/>
+<img src="images/events_send_message_and_wait.png" alt="Skicka meddelande och vänta"/>
 
-<img src="images/control_sleep.png"/>
-<img src="images/control_for.png"/>
-<img src="images/control_forever.png"/>
-<img src="images/control_if_then.png"/>
-<img src="images/control_if_then_else.png"/>
-<img src="images/control_wait.png"/>
-<img src="images/control_repeat_until.png"/>
-<img src="images/control_stop.png"/>
-<img src="images/control_clone_event.png"/>
-<img src="images/control_create_clone.png"/>
-<img src="images/control_delete_clone.png"/>
+<img src="images/control_sleep.png" alt="Vänta"/>
+<img src="images/control_for.png" alt="Repetera n gånger"/>
+<img src="images/control_forever.png" alt="För evigt"/>
+<img src="images/control_if_then.png" alt="Om/så"/>
+<img src="images/control_if_then_else.png" alt="Om/så/annars/"/>
+<img src="images/control_wait.png" alt="Vänta"/>
+<img src="images/control_repeat_until.png" alt="Repetera tills"/>
+<img src="images/control_stop.png" alt="Stoppa script"/>
+<img src="images/control_clone_event.png" alt="Klon skapad"/>
+<img src="images/control_create_clone.png" alt="Skapa klon"/>
+<img src="images/control_delete_clone.png" alt="Radera klon"/>
 
-<img src="images/sensing_touches.png"/>
-<img src="images/sensing_touches_color.png"/>
-<img src="images/sensing_touches_color_at.png"/>
-<img src="images/sensing_distance.png"/>
-<img src="images/sensing_ask_and_wait.png"/>
-<img src="images/sensing_answer.png"/>
-<img src="images/sensing_keypress.png"/>
-<img src="images/sensing_mouseclick.png"/>
-<img src="images/sensing_mouse_x.png"/>
-<img src="images/sensing_mouse_y.png"/>
-<img src="images/sensing_volume.png"/>
-<img src="images/sensing_video.png"/>
-<img src="images/sensing_video_enable.png"/>
-<img src="images/sensing_video_transparency.png"/>
-<img src="images/sensing_timer.png"/>
-<img src="images/sensing_reset_timer.png"/>
-<img src="images/sensing_sprite_properties.png"/>
-<img src="images/sensing_time.png"/>
-<img src="images/sensing_days_since_2000.png"/>
-<img src="images/sensing_username.png"/>
+<img src="images/sensing_touches.png" alt="Rör"/>
+<img src="images/sensing_touches_color.png" alt="Rör färg"/>
+<img src="images/sensing_touches_color_at.png" alt="Rör färg vid"/>
+<img src="images/sensing_distance.png" alt="Avstånd"/>
+<img src="images/sensing_ask_and_wait.png" alt="Fråga och vänta"/>
+<img src="images/sensing_answer.png" alt="Svar"/>
+<img src="images/sensing_keypress.png" alt="Knapptryckning"/>
+<img src="images/sensing_mouseclick.png" alt="Musklick"/>
+<img src="images/sensing_mouse_x.png" alt="Muspekarens x"/>
+<img src="images/sensing_mouse_y.png" alt="Muspekarens y"/>
+<img src="images/sensing_volume.png" alt="Ljudvolym"/>
+<img src="images/sensing_video.png" alt="Känn av video"/>
+<img src="images/sensing_video_enable.png" alt="Starta video"/>
+<img src="images/sensing_video_transparency.png" alt="Video genomskinlighet"/>
+<img src="images/sensing_timer.png" alt="Timer"/>
+<img src="images/sensing_reset_timer.png" alt="Nollställ timer"/>
+<img src="images/sensing_sprite_properties.png" alt="Olika sprite-egenskaper"/>
+<img src="images/sensing_time.png" alt="Klockslag"/>
+<img src="images/sensing_days_since_2000.png" alt="Dagar sedan 2000"/>
+<img src="images/sensing_username.png" alt="Användarnamn"/>
 
-<img src="images/operators_plus.png"/>
-<img src="images/operators_minus.png"/>
-<img src="images/operators_multiply.png"/>
-<img src="images/operators_divide.png"/>
-<img src="images/operators_random.png"/>
-<img src="images/operators_lessthan.png"/>
-<img src="images/operators_equals.png"/>
-<img src="images/operators_greaterthan.png"/>
-<img src="images/operators_and.png"/>
-<img src="images/operators_or.png"/>
-<img src="images/operators_not.png"/>
-<img src="images/operators_string_concat.png"/>
-<img src="images/operators_string_nth.png"/>
-<img src="images/operators_string_length.png"/>
-<img src="images/operators_mod.png"/>
-<img src="images/operators_round.png"/>
-<img src="images/operators_misc.png"/>
+<img src="images/operators_plus.png" alt="addition"/>
+<img src="images/operators_minus.png" alt="subtraktion"/>
+<img src="images/operators_multiply.png" alt="multiplikation"/>
+<img src="images/operators_divide.png" alt="division" />
+<img src="images/operators_random.png" alt="slumptal"/>
+<img src="images/operators_lessthan.png" alt="Mindre än"/>
+<img src="images/operators_equals.png" alt="Lika med"/>
+<img src="images/operators_greaterthan.png" alt="Större än"/>
+<img src="images/operators_and.png" alt="och"/>
+<img src="images/operators_or.png" alt="eller"/>
+<img src="images/operators_not.png" alt="inte"/>
+<img src="images/operators_string_concat.png" alt="Konkatenering"/>
+<img src="images/operators_string_nth.png" alt="n:te tecken"/>
+<img src="images/operators_string_length.png" alt="Stränglängd"/>
+<img src="images/operators_mod.png" alt="Modulus"/>
+<img src="images/operators_round.png" alt="Avrundning"/>
+<img src="images/operators_misc.png" alt="Diverse funktioner"/>
 
 </div>
 </body>
